@@ -1,0 +1,166 @@
+body {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background: #fdf5f5;
+}
+
+.box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 35px;
+/*
+    box-shadow: inset 0px 23px 15px #cbced1,
+        0px 20px 15px #533d3d;
+*/
+
+}
+
+.box h1 {
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+.box h6 {
+    font-weight: 10;
+    color: white;
+    font-family: sans-serif;
+    text-transform: lowercase;
+}
+
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border: 2px solid #A7A7A7;
+    padding: 14px 10px;
+    width: 200px;
+    color: white;
+    outline: none;
+    font-family: sans-serif;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 280px;
+    border-color: #878787;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border: 2px solid #A7A7A7;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.25s;
+    background: -webkit-linear-gradient(-90deg, red, #eb850d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+    
+}
+.btn1{
+     border: 0;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border: 2px solid #A7A7A7;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.25s;
+    background: -webkit-linear-gradient(-90deg, red, #eb850d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+}
+.box input[type="submit"]:hover {
+    background: -webkit-linear-gradient(-90deg, red, #eb850d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+.fa {
+    font-size: 25px;
+    color: #9c47fc;
+    display: block;
+    background: -webkit-linear-gradient(-90deg, red, #eb850d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.fontawesome-icon-list {
+    text-align: center;
+}
+
+.icon {
+    background-color: black;
+    border: 1px solid white;
+    border: 0px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    transition: all .2s;
+}
+
+.icon:hover {
+    border-radius: 10px;
+     box-shadow: inset 0px 23px 15px #d9cab9,
+        0px 0px 15px #533d3d;
+}
+
+.btn{
+    
+    background-color: black;
+    border: 1px solid white;
+    border: 0px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    transition: all .2s;
+}
+.btn:hover {
+    border-radius: 10px;
+     box-shadow: inset 0px 23px 15px #d9cab9,
+        0px 0px 15px #533d3d;
+}
+
+

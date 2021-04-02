@@ -18,9 +18,9 @@ $data = mysqli_query($conn,$sql);
 if ($data) {
     
 	
-	header("location: /inkINlink/home.php");
+//	header("location: /inkINlink/home.php");
 	
-//    echo "hello";
+ echo "hello";
 	
 	
 } else {
