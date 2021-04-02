@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
@@ -12,57 +13,52 @@
 
     <div class="registration">
         <div class="form-conteniar">
-            <form class="box">
+            <form class="box" action="insert_registration.php" method="post">
                 <h2>Registration</h2>
-                
-                
+
+
                 <div class="input-name">
                     <i class="fa fa-user lock"></i>
-                    <input type="text" placeholder="First Name" class="name">
+                    <input type="text" placeholder="First Name" class="name" id="f_name" name="f_name">
                 </div>
 
 
                 <div class="input-name">
                     <i class="fa fa-user lock"></i>
-                    <input type="text" placeholder="Last Name" class="name">
+                    <input type="text" placeholder="Last Name" class="name" id="l_name" name="l_name">
                 </div>
 
 
 
                 <div class="input-name">
                     <i class="fa fa-envelope email"></i>
-                    <input type="email" placeholder="Email" required class="text-name">
+                    <input type="email" placeholder="Email" required class="text-name" id="email" name="email">
                 </div>
 
                 <div class="input-name">
                     <i class="fa fa-check username"></i>
-                    <input type="text" placeholder="username" required class="text-name" class="username">
+                    <input type="text" placeholder="username" required id="user_name" name="user_name" class="name">
                 </div>
 
                 <div class="input-name">
                     <i class="fa fa-lock lock"></i>
-                    <input type="password" placeholder="Password" class="text-name">
+                    <input type="password" placeholder="Password" class="text-name" id="password" name="password">
                 </div>
 
 
 
                 <div class="input-name">
                     <i class="fa fa-lock lock"></i>
-                    <input type="password" placeholder="Re-type Password" class="text-name">
+                    <input type="password" placeholder="Re-type Password" class="text-name" id="re_password" name="re_password">
                 </div>
 
 
 
-                <div class="input-name">
-                    <input type="radio" name="radiogroup1" id="gender" class="radio-button">
-                    <label for="gender" class="gender">Male</label>
+               <div class="input-name">
+                   <i class="fa fa-user lock"></i>
                     
-                    <input type="radio" name="radiogroup1" id="genderFemale" class="radio-button">
-                    <label for="genderFemale" class="gender">Female </label>
+                    <input type="text" placeholder="Gender" class="text-name" id="gender" name="gender">
                 </div>
-                
-                
-
 
                 <div class="input-name">
                     <input class="button" type="submit" value="Registration">
@@ -76,7 +72,9 @@
     </div>
 
     </div>
-    
 
 
-</body></html>
+
+</body>
+
+</html>

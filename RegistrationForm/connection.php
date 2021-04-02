@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "login";
+$dbname = "inkINlink";
 
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
