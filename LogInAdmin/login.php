@@ -15,7 +15,7 @@ session_start();
 </head>
 <body>
 
-    <h2>Welcom <?php echo $_SESSION['email']; ?></h2>
+    <h2>Welcomw <?php echo $_SESSION['email']; ?></h2>
     Click here to <a href = "logout.php">Logout</a>
     
 </body>
