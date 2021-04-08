@@ -1,5 +1,8 @@
 <?php
 
+//  Pritom Saha 
+//  181-15-1807    
+
 include ("connection.php");
 $sql = "SELECT id, email, password FROM registration";
 $result = $conn->query($sql);

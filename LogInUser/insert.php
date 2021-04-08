@@ -24,6 +24,6 @@ $conn = mysqli_connect('localhost', 'root', '' , 'inkinlink') or die ('Unable to
     }
     }
     if(isset($_SESSION["email"])){
-        header("Location:/inkINlink/inkINlink.php");
+        header("Location:/inkINlink/afterLogIn/inkINlink.php");
     }
 ?>
