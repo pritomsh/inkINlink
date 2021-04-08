@@ -1,9 +1,9 @@
 <?php
     session_start();
 
-    if(isset($_SESSION['User']))
+    if(isset($_SESSION['email']))
     {
-        echo ' WellCome ' . $_SESSION['User'].'<br/>';
+        echo ' WellCome ' . $_SESSION['email'].'<br/>';
         echo '<a href="logout.php?logout">Logout</a>';
     }
     else
