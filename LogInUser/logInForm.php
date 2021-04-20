@@ -47,7 +47,13 @@
         </form>
 
         <h6>Don't have account </h6>
-        <input type="submit" value="Registration Here " name="submit">
+                    
+            
+        <li class="nav-item">
+            <a class="btn1" href="/inkINlink/RegistrationForm/index.php">Registration</a>
+          </li>
+        
+        
     </div>
 
 

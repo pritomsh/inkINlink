@@ -40,7 +40,7 @@
             <a class="nav-link" href="LogInUser/logInForm.php">Log In</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Trends</a>
+            <a class="nav-link" href="/inkINlink/RegistrationForm/index.php">Registration </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"

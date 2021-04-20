@@ -137,4 +137,17 @@ body {
 }
 
 
+a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+
 
