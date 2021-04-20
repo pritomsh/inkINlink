@@ -34,11 +34,11 @@
                 </div>
                 <div class="input-name">
                     <i class="fa fa-lock lock"></i>
-                    <input type="password" placeholder="Password" class="text-name" id="password" name="password">
+                    <input type="password" placeholder="Password" class="text-name" id="password" name="password" required>
                 </div>
                 <div class="input-name">
                     <i class="fa fa-lock lock"></i>
-                    <input type="password" placeholder="Re-type Password" class="text-name" id="re_password" name="re_password">
+                    <input type="password" placeholder="Re-type Password" class="text-name" id="re_password" name="re_password" required>
                 </div>
                 <div class="input-name">
                     <i class="fa fa-user lock"></i>
@@ -49,7 +49,6 @@
                 </div>          
             </form>
                     <a class="btn" href="/inkINlink/inkINlink.php">
-            
                    <button>Back</button>
                    </a>
                     

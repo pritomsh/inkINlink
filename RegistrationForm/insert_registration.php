@@ -17,11 +17,7 @@ $data = mysqli_query($conn,$sql);
 
 if ($data) {
     
-	
-//	header("location: /inkINlink/home.php");
-	
- echo "hello";
-	
+header("location: /inkINlink/inkINlink.php");	
 	
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;

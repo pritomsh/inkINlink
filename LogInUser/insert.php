@@ -15,7 +15,7 @@ $conn = mysqli_connect('localhost', 'root', '' , 'inkinlink') or die ('Unable to
 
     if(is_array($row)) {
         $_SESSION["email"] = $row['email'];
-//        $_SESSION["password"] = $row['password'];
+       $_SESSION["password"] = $row['password'];
         $_SESSION["username"] = $row['username'];
     }   else {
         echo '<script type = "text/javascript">';
@@ -28,6 +28,6 @@ $conn = mysqli_connect('localhost', 'root', '' , 'inkinlink') or die ('Unable to
 
     if(isset($_SESSION["username"])){
         header("Location:/inkINlink/afterLogIn/inkINlink.php");
-//        header("Location: /inkINlink/LogInUser/wellcome.php");
+
     }
 ?>

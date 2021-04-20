@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 
 <head>
@@ -16,8 +19,8 @@
         <form method="POST" action="insert.php">
             <h1>Log In</h1>
 
-            <input type="text" id="fname" name="email" placeholder="Email">
-            <input type="password" id="pwd" name="password" placeholder="Password">
+            <input type="text" id="fname" name="email" placeholder="Email" required>
+            <input type="password" id="pwd" name="password" placeholder="Password" required>
 
             <!--        <input type="submit" value="Sign" name="submit">-->
             <button class="btn1" name="login">LogIn</button>
@@ -52,6 +55,9 @@
         <li class="nav-item">
             <a class="btn1" href="/inkINlink/RegistrationForm/index.php">Registration</a>
           </li>
+          <a href="/inkINlink/inkINlink.php">
+                   <button>Back</button>
+                   </a>
         
         
     </div>
