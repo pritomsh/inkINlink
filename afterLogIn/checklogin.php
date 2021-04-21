@@ -29,8 +29,8 @@ if (isset($_POST['login'])){
         }
     
     
-        if(isset($_SESSION["email"])){
-            header("Location:show.php");
-    
-        }
+//        if(isset($_SESSION["email"])){
+//            header("Location:show.php");
+//    
+//        }
 ?>

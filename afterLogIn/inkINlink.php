@@ -70,7 +70,7 @@ $result = $conn->query($sql);
         </div>
     </nav>
 
-    <!-- HERO Section -->
+ 
 
     <section class="hero py-4">
         <div class="container">
