@@ -1,6 +1,7 @@
 <?php
 include_once("connection.php");
-
+include_once("session.php");
+check_login_user();
 $sql = "email, password FROM registration";
 $result = $conn->query($sql);
 ?>
