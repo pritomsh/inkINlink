@@ -24,7 +24,7 @@ if(isset($_POST['update']))
 	} else {
 		$result = mysqli_query($mysqli, "UPDATE registration SET f_name='$f_name',l_name='$l_name',email ='$email',username = '$username', gender = '$gender' WHERE id=$id");
 
-		header("Location: user_list.php");
+		header("Location: index.php");
 	}
 }
 ?>

@@ -39,7 +39,7 @@ $result = $conn->query($sql);
                         <a class="nav-link active" aria-current="page" href="/inkINlink/afterLogIn/inkINlink.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/inkINlink/profile.html">Profile</a>
+                        <a class="nav-link" href="/inkINlink/profile2/index.php">Profile</a>
                     </li>
 
                     <li class="nav-item">
@@ -70,7 +70,7 @@ $result = $conn->query($sql);
         </div>
     </nav>
 
- 
+
 
     <section class="hero py-4">
         <div class="container">
