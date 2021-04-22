@@ -10,57 +10,96 @@
     <title>INK Ink Link</title>
 
     <!-- bootstrap 4 cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-- css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="/inkINlink/inkINlink.php">INK In Link</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">INK In Link</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="LogInUser/logInForm.php">Log In</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/inkINlink/RegistrationForm/index.php">Registration </a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trends</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Catagories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Technology</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">World</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Sports</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control border-0 rounded-0"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn-main btn btn-success ml-3 my-sm-0 rounded-0"
+              type="submit"
+            >
+              Search
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/inkINlink/inkINlink.php">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="LogInUser/logInForm.php">Log In</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/inkINlink/RegistrationForm/index.php">Registration </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Catagories
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+          </form>
         </div>
+      </div>
     </nav>
 
     <!-- HERO Section -->
@@ -131,224 +170,292 @@
     </section>
 
     <!-- Blog Section -->
-    <div class="container">
-        <section class="blog-posts py-4">
-            <div class="row">
-                <div class="col-md-8">
-                    <article class="blog-post mb-3">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img class="img-fluid" src="images/covid-19.jpg" alt="">
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>Covid-19</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus nibh, lacinia in magna eu,
-                                    bibendum convallis nunc. Fusce ornare ultricies urna. In hac habitasse platea dictumst. Ut purus
-                                    tellus, maximus sed laoreet eget, pharetra non quam. Vivamus orci ante, scelerisque congue urna quis,
-                                    vehicula pulvinar est.</p>
-                                <div class="badge">
-                                    <a href="#">Medical</a>
-                                    <a href="#">global</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="blog-post mb-3">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img class="img-fluid" src="images/covid-19.jpg" alt="">
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>Covid-19</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus nibh, lacinia in magna eu,
-                                    bibendum convallis nunc. Fusce ornare ultricies urna. In hac habitasse platea dictumst. Ut purus
-                                    tellus, maximus sed laoreet eget, pharetra non quam. Vivamus orci ante, scelerisque congue urna quis,
-                                    vehicula pulvinar est.</p>
-                                <div class="badge">
-                                    <a href="#">Medical</a>
-                                    <a href="#">global</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="blog-post mb-3">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img class="img-fluid" src="images/covid-19.jpg" alt="">
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>Covid-19</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus nibh, lacinia in magna eu,
-                                    bibendum convallis nunc. Fusce ornare ultricies urna. In hac habitasse platea dictumst. Ut purus
-                                    tellus, maximus sed laoreet eget, pharetra non quam. Vivamus orci ante, scelerisque congue urna quis,
-                                    vehicula pulvinar est.</p>
-                                <div class="badge">
-                                    <a href="#">Medical</a>
-                                    <a href="#">global</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="blog-post mb-3">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img class="img-fluid" src="images/covid-19.jpg" alt="">
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>Covid-19</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus nibh, lacinia in magna eu,
-                                    bibendum convallis nunc. Fusce ornare ultricies urna. In hac habitasse platea dictumst. Ut purus
-                                    tellus, maximus sed laoreet eget, pharetra non quam. Vivamus orci ante, scelerisque congue urna quis,
-                                    vehicula pulvinar est.</p>
-                                <div class="badge">
-                                    <a href="#">Medical</a>
-                                    <a href="#">global</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
 
+    <section class="blog-posts py-4">
+      <div class="container contents-blogs">
+        <div class="row">
+          <div class="col-md-8">
+            <article class="blog-post mb-3 shadow">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="img-fluid" src="images/covid-19.jpg" alt="" />
                 </div>
-                <aside class="col-md-4">
-                    <!-- Social links -->
-                    <div class="row text-center">
-                        <div class="col-sm-4">
-                            <a class="social-link py-4 w-100">
-                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="col-sm-4">
-                            <a class="social-link py-4 w-100">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="col-sm-4">
-                            <a class="social-link py-4 w-100">
-                                <i class="fa fa-youtube" aria-hidden="true"></i>
-                            </a>
-                        </div>
+                <div class="col-sm-8">
+                  <a href="/blogs.html" class="blog-title">Covid-19</a>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aliquam risus nibh, lacinia in magna eu, bibendum convallis
+                    nunc. Fusce ornare ultricies urna. In hac habitasse platea
+                    dictumst. Ut purus tellus.
+                  </p>
+                  <div class="badge">
+                    <a href="#">Medical</a>
+                    <a href="#">global</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post mb-3 shadow">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img class="img-fluid" src="images/covid-19.jpg" alt="" />
+                  </div>
+                  <div class="col-sm-8">
+                    <a href="/blogs.html" class="blog-title">Covid-19</a>
+                    <p class="m-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aliquam risus nibh, lacinia in magna eu, bibendum convallis
+                      nunc. Fusce ornare ultricies urna. In hac habitasse platea
+                      dictumst. Ut purus tellus.
+                    </p>
+                    <div class="badge">
+                      <a href="#">Medical</a>
+                      <a href="#">global</a>
                     </div>
-                    <h4 class="aside-heading mt-4">Popular Authors</h4>
-                    <article class="row author mb-3">
-                        <div class="col-sm-4">
-                            <img class="img-fluid rounded-circle" src="images/author.jpg" alt="">
-                        </div>
-                        <div class="col-sm-8">
-                            <h5 class="m-0">Jake peralta</h5>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="social-link">
-                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="row author mb-3">
-                        <div class="col-sm-4">
-                            <img class="img-fluid rounded-circle" src="images/author.jpg" alt="">
-                        </div>
-                        <div class="col-sm-8">
-                            <h5 class="m-0">Jake peralta</h5>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="social-link">
-                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="row author mb-3">
-                        <div class="col-sm-4">
-                            <img class="img-fluid rounded-circle" src="images/author.jpg" alt="">
-                        </div>
-                        <div class="col-sm-8">
-                            <h5 class="m-0">Jake peralta</h5>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="social-link">
-                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="row author mb-3">
-                        <div class="col-sm-4">
-                            <img class="img-fluid rounded-circle" src="images/author.jpg" alt="">
-                        </div>
-                        <div class="col-sm-8">
-                            <h5 class="m-0">Jake peralta</h5>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="social-link">
-                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                    <h4 class="aside-heading mt-4">Popular Catagories</h4>
-                    <div class="badge w-100">
-                        <p class="badge-link">
-                            <a href="#">Technology</a>
-                        </p>
-                        <p class="badge-link">
-                            <a href="#">Medical</a>
-                        </p>
-                        <p class="badge-link">
-                            <a href="#">Global</a>
-                        </p>
-                        <p class="badge-link">
-                            <a href="#">Covid-19</a>
-                        </p>
-                        <p class="badge-link">
-                            <a href="#">Sports</a>
-                        </p>
+                  </div>
+                </div>
+              </article>
+              <article class="blog-post mb-3 shadow">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img class="img-fluid" src="images/covid-19.jpg" alt="" />
+                  </div>
+                  <div class="col-sm-8">
+                    <a href="/blogs.html" class="blog-title">Covid-19</a>
+                    <p class="m-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aliquam risus nibh, lacinia in magna eu, bibendum convallis
+                      nunc. Fusce ornare ultricies urna. In hac habitasse platea
+                      dictumst. Ut purus tellus.
+                    </p>
+                    <div class="badge">
+                      <a href="#">Medical</a>
+                      <a href="#">global</a>
                     </div>
-                </aside>
-            </div>
-        </section>
+                  </div>
+                </div>
+              </article>
+              <article class="blog-post mb-3 shadow">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img class="img-fluid" src="images/covid-19.jpg" alt="" />
+                  </div>
+                  <div class="col-sm-8">
+                    <a href="/blogs.html" class="blog-title">Covid-19</a>
+                    <p class="m-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aliquam risus nibh, lacinia in magna eu, bibendum convallis
+                      nunc. Fusce ornare ultricies urna. In hac habitasse platea
+                      dictumst. Ut purus tellus.
+                    </p>
+                    <div class="badge">
+                      <a href="#">Medical</a>
+                      <a href="#">global</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="blog-post mb-3 shadow">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img class="img-fluid" src="images/covid-19.jpg" alt="" />
+                  </div>
+                  <div class="col-sm-8">
+                    <a href="/blogs.html" class="blog-title">Covid-19</a>
+                    <p class="m-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aliquam risus nibh, lacinia in magna eu, bibendum convallis
+                      nunc. Fusce ornare ultricies urna. In hac habitasse platea
+                      dictumst. Ut purus tellus.
+                    </p>
+                    <div class="badge">
+                      <a href="#">Medical</a>
+                      <a href="#">global</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
 
-    </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+            
+          </div>
+          <aside class="col-md-4">
+            <!-- Social links -->
+            <div class="social-links row text-center">
+              <div class="col-sm-4 py-5">
+                <a class="social-link w-100">
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-sm-4 py-5 second">
+                <a class="social-link w-100">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-sm-4 py-5">
+                <a class="social-link w-100">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <h4 class="aside-heading mt-4 mb-3 pl-3">Popular Authors</h4>
+            <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="images/author.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-8">
+                <h5 class="m-0">Jake peralta</h5>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="social-link">
+                  <a href="#"
+                    ><i class="fa fa-facebook-official" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="images/author.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-8">
+                <h5 class="m-0">Jake peralta</h5>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="social-link">
+                  <a href="#"
+                    ><i class="fa fa-facebook-official" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="images/author.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-8">
+                <h5 class="m-0">Jake peralta</h5>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="social-link">
+                  <a href="#"
+                    ><i class="fa fa-facebook-official" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="images/author.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-8">
+                <h5 class="m-0">Jake peralta</h5>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="social-link">
+                  <a href="#"
+                    ><i class="fa fa-facebook-official" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <h4 class="aside-heading mt-4 pl-3">Popular Catagories</h4>
+            <div class="badges w-100">
+                <a href="#">Technology</a>
+                <a href="#">Global</a>
+                <a href="#">Medical</a>
+                <a href="#">Daily life</a>
+                <a href="#">National</a>
+                <a href="#">Weather</a>
+                <a href="#">Sports</a>
+                <a href="#">Education</a>
+                <a href="#">Business</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a class="footer-logo" href="">INK in Link</a>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae suscipit deserunt autem veritatis!</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Usefull Links</h4>
-                    <ul>
-                        <li>Home</li>
-                        <li>Terms of services</li>
-                        <li>Privacy Policy</li>
-                        <li>Contact Us</li>
-                        <li>About Us</li>
-
-                    </ul>
-                </div>
-                <div class="col-md-4 shadow">
-
-                </div>
-            </div>
-            <div class="w-100 text-center credits">
-                <p>Made by Team EDITH &copy; 2021</p>
-            </div>
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <a class="footer-logo" href="">INK in Link</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius animi commodi quaerat. Quidem dolore odit consequatur unde asperiores libero laudantium? Similique eveniet reiciendis necessitatibus saepe numquam quasi expedita eius dolore?
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4>Usefull Links</h4>
+            <ul>
+              <li>Home</li>
+              <li>Terms of services</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us</li>
+              <li>About Us</li>
+            </ul>
+          </div>
         </div>
+        <div class="w-100 text-center credits">
+          <p>Made by Team EDITH &copy; 2021</p>
+        </div>
+      </div>
     </footer>
+
 
     <!-- bootstrap js, jquery, popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
