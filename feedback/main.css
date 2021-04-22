@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: url(img/bg.jpg)no-repeat center /cover;
+	overflow: hidden;
+}
+
+form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 450px;
+	background: rgba(72,72,72,.4);
+	padding: 35px;
+	border-radius: 7px;
+}
+.inputs{
+	width: 100%;
+	font-size: 18px;
+	margin: 5px auto;
+	padding: 13px 13px 13px 54px;
+}
+input[name="name"]{
+	background-image: url(img/person.svg);
+}
+input[name="email"]{
+	background-image: url(img/msg.svg);
+}
+textarea{
+	background-image: url(img/pen.svg);
+	height: 150px;
+}
+
+input[name="name"],
+input[name="email"],
+textarea{
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+button{
+	width: 100%;
+	background-color: #FF8C00;
+	border: 4px solid #fbfbfb;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	padding: 22px 0;
+}
+button:hover{
+	color: #FF8C00;
+	background-color: #fff;
+}
