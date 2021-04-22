@@ -15,65 +15,48 @@
         <div class="form-conteniar">
             <form class="box" action="insert_registration.php" method="post">
                 <h2>Registration</h2>
-
-
                 <div class="input-name">
                     <i class="fa fa-user lock"></i>
                     <input type="text" placeholder="First Name" class="name" id="f_name" name="f_name">
                 </div>
-
-
                 <div class="input-name">
                     <i class="fa fa-user lock"></i>
                     <input type="text" placeholder="Last Name" class="name" id="l_name" name="l_name">
                 </div>
 
-
-
                 <div class="input-name">
                     <i class="fa fa-envelope email"></i>
                     <input type="email" placeholder="Email" required class="text-name" id="email" name="email">
                 </div>
-
                 <div class="input-name">
                     <i class="fa fa-check username"></i>
                     <input type="text" placeholder="username" required id="user_name" name="user_name" class="name">
                 </div>
-
                 <div class="input-name">
                     <i class="fa fa-lock lock"></i>
-                    <input type="password" placeholder="Password" class="text-name" id="password" name="password">
+                    <input type="password" placeholder="Password" class="text-name" id="password" name="password" required>
                 </div>
-
-
-
                 <div class="input-name">
                     <i class="fa fa-lock lock"></i>
-                    <input type="password" placeholder="Re-type Password" class="text-name" id="re_password" name="re_password">
+                    <input type="password" placeholder="Re-type Password" class="text-name" id="re_password" name="re_password" required>
                 </div>
-
-
-
-               <div class="input-name">
-                   <i class="fa fa-user lock"></i>
-                    
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
                     <input type="text" placeholder="Gender" class="text-name" id="gender" name="gender">
                 </div>
-
                 <div class="input-name">
                     <input class="button" type="submit" value="Registration">
-                </div>
-
-
+                </div>          
             </form>
+                    <a class="btn" href="/inkINlink/inkINlink.php">
+                   <button>Back</button>
+                   </a>
+                    
+
 
         </div>
     </div>
-    </div>
-
-    </div>
-
-
+    
 
 </body>
 

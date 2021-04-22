@@ -1,5 +1,9 @@
 <?php
-    session_start();
+include_once("connection.php");
+include_once("session.php");
+check_login_user();
+$sql = "email, password FROM registration";
+$result = $conn->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -46,23 +50,27 @@
                 </ul>
                 <?php
     
-    if(isset($_SESSION['username']))
-    {
-        echo ' WellCome ' . $_SESSION['username'].'<br/>';
-        echo '<a href="/inkINlink/inkINlink.php?logout">Logout</a>';
-    }
-    else
-    {
-        header("location:logInForm.php");
-    }
+//    if(isset($_SESSION['username']))
+//    {
+//        echo ' WellCome ' . $_SESSION['username'].'<br/>';
+//        echo '<a href="/inkINlink/inkINlink.php?logout">Logout</a>';
+//    }
+//    else
+//    {
+//        header("location:/inkINlink/LogInUser/logInForm.php");
+//    }
 
+                
+                
+
+                
 ?>
-
+                <a href="logout.php" class="btn btn-info" role="button" style="float:right;">Log Out</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO Section -->
+ 
 
     <section class="hero py-4">
         <div class="container">
@@ -152,11 +160,11 @@
                             </div>
                         </div>
                     </article>
-                    
-                    
-                    
-                   
-                    
+
+
+
+
+
                 </div>
                 <aside class="col-md-4">
                     <!-- Social links -->
