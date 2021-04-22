@@ -1,0 +1,181 @@
+/* This is the body design */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 700;
+    color: #66FCF1;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+ul {
+    color: white;
+}
+
+/* this is the navbar of the site */
+.navbar {
+    background-color: #000000;
+}
+
+a{
+    color: #66FCF1;
+    text-decoration: none !important;
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+.navbar-brand, .footer-logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.btn-main {
+    background-color: #66FCF1 !important;
+    color: black !important;
+}
+
+input {
+    background-color: #13181f !important;
+    color: #66FCF1 !important;
+}
+
+img {
+    filter: grayscale(50%) brightness(1);
+}
+
+img.rounded-circle {
+    filter: none;
+    border: 2px solid #66FCF1;
+}
+
+/* Hero Section */
+
+.hero-post {
+    position: relative;
+}
+
+.hero {
+    background-color: #13181f;
+}
+
+.hero-post-badges {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+}
+
+.hero-post-badges > a {
+    display: block;
+    background-color: #000000;
+    color: #66FCF1;
+    font-size: 0.8rem;
+}
+
+.hero-post-content {
+    position: absolute;
+    bottom: 10px;
+    color: #66FCF1;
+}
+
+/* Blog Section */
+
+.blog-posts {
+    background-color: #000000;
+    color: white;
+}
+
+.blog-post {
+    background-color: #13181f;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-post p {
+    font-size: 0.9rem;
+}
+
+.blog-post .col-sm-8 {
+    border-left: 5px solid #66FCF1;
+}
+
+.badge {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.badge > a{
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    background-color: #66FCF1;
+    color: #000000;
+}
+
+/* Side Bar */
+
+.social-links {
+    background-color: #66FCF1;
+    color: #13181f;
+    font-size: 2rem;
+}
+
+.second {
+    background-color: #13181f;
+    color: #66FCF1;
+}
+
+.first {
+    background-color: #000000;
+    color: #66FCF1;
+}
+
+.aside-heading {
+    border-left: 3px solid #66FCF1;
+}
+
+.author p{
+    font-size: 0.9rem;
+}
+
+.social-link a{
+    margin-left: 0.8rem;
+}
+
+.badges {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.badges > a{
+    margin-left: 0.5rem;
+    display: inline-block;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    background-color: #66FCF1;
+    color: #000000;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #13181f;
+    color: white;
+}
+
+.content {
+    background-color: #000000;
+    color: white;
+}
