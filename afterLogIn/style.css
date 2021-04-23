@@ -179,3 +179,25 @@ img.rounded-circle {
     background-color: #000000;
     color: white;
 }
+
+/* this is the feedback design */
+
+
+.feedback-button {
+    background-color: #66fcf1;
+    border: 2px solid white;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-top: 15px;
+    margin-left: 20px;
+    transition-duration: 0.4s;
+  }
+  
+  .feedback-button:hover {
+      background-color: #3fc2b9;
+      color: white;
+    }

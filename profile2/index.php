@@ -2,7 +2,7 @@
 include_once("config.php");
 include_once("function.php");
 check_login_user();
-$result = mysqli_query($mysqli, "SELECT * FROM registration ORDER BY id DESC");
+$result = mysqli_query($mysqli, "SELECT * FROM registration ");
 ?>
 
 
@@ -31,7 +31,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM registration ORDER BY id DESC");
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="/inkINlink/inkINlink.php">INK In Link</a>
+                <a class="navbar-brand" href="/inkINlink/afterLogIn/inkINlink.php">INK In Link</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM registration ORDER BY id DESC");
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/inkINlink/inkINlink.php">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/inkINlink/afterLogIn/inkINlink.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/inkINlink/profile.html">Profile</a>
@@ -81,6 +81,31 @@ $result = mysqli_query($mysqli, "SELECT * FROM registration ORDER BY id DESC");
                             <?php 
 
                             echo'<br>';
+       
+                            echo '' . $_SESSION['username'].'<br/>';   
+                            
+
+     
+                            ?>  
+                    
+
+                            <li><a href="update.php"><i class="far fa-edit fa-1.5x mb-3">Update</i></a></li>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 bg-white rounded-right">
+                        <h3 class="mt-3 text-center">Information</h3>
+                        <hr class="bg-primary">
+                  
+
+
+                        <div class="container" style="margin-top:20px;">
+
+
+                           
+                            
+                                <?php 
+
+                            echo'<br>';
                             echo '' . $_SESSION['password'].'<br/>';        
                             echo '' . $_SESSION['email'].'<br/>';        
                             echo '' . $_SESSION['username'].'<br/>';   
@@ -89,31 +114,11 @@ $result = mysqli_query($mysqli, "SELECT * FROM registration ORDER BY id DESC");
 
      
                             ?>  
-
-
-                            <li><a href="update.php"><i class="far fa-edit fa-1.5x mb-3">Update</i></a></li>
-                        </div>
-                    </div>
-                    <div class="col-sm-8 bg-white rounded-right">
-                        <h3 class="mt-3 text-center">Information</h3>
-                        <hr class="bg-primary">
-                        <!--
-<div class="row">
-<div class="col-sm-6">
-<p class="font-weight-bold">Email:</p>
-<h6 class="text-muted">abcd@gmail.com</h6>
-</div>
-<div class="col-sm-6">
-<p class="font-weight-bold">Phone:</p>
-<h6 class="text-muted">12345678910</h6>
-</div>
-</div>
--->
-
-
-                        <div class="container" style="margin-top:20px;">
-
-                            <table class="table">
+                             
+                             
+                             
+                             
+                              <table class="table">
                                 <thead>
                                     <tr>
                                         <th>First Name</th>
@@ -127,31 +132,39 @@ $result = mysqli_query($mysqli, "SELECT * FROM registration ORDER BY id DESC");
                                 <tbody>
                                     <?php
                                     echo "User Detail";
-                                    while($res = mysqli_fetch_array($result)) {
+                                    $res = mysqli_fetch_array($result);
 
 
 
                                         echo "<tr>";
-                                        echo "<td>".$res['f_name']."</td>";
-                                        echo "<td>".$res['l_name']."</td>";
-                                        echo "<td>".$res['email']."</td>";
-                                        echo "<td>".$res['username']."</td>";
-                                        echo "<td>".$res['gender']."</td>";
+                                        echo "<td>".$_SESSION['f_name']."</td>";
+                                        echo "<td>".$_SESSION['f_name']."</td>";
+                                        echo "<td>".$_SESSION['f_name']."</td>";
+                                        echo "<td>".$_SESSION['f_name']."</td>";
+                                        echo "<td>".$_SESSION['f_name']."</td>";
 
-                                        echo "<td><a href=\"edit.php?id=$res[id]\">Edit</a> | <a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
-                                    }
+//                                        echo "<td><a href="edit.php">Edit</a> | <a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
+                                    
                                     ?>
+                                    
+                                    
+                                    <a href="edit1.php">edit</a>
                                 </tbody>
                             </table>
-                            <a href="logout.php" class="btn btn-info" role="button" style="float:right;">Log Out</a>
+                            
+                            
+                            
+                            
+                             
+                              
+                               
+                                 <a href="logout.php" class="btn btn-info" role="button" style="float:right;">Log Out</a>
                         </div>
 
 
 
 
-                        <?php 
-                        echo '' . $_SESSION['email'].'<br/>';        
-                        ?>  
+                         
 
 
                         <hr class="bg-primary">

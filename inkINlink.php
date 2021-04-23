@@ -430,7 +430,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer py-4">
+  <footer class="footer py-4">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -439,7 +439,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius animi commodi quaerat. Quidem dolore odit consequatur unde asperiores libero laudantium? Similique eveniet reiciendis necessitatibus saepe numquam quasi expedita eius dolore?
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-3">
             <h4>Usefull Links</h4>
             <ul>
               <li>Home</li>
@@ -448,6 +448,10 @@
               <li>Contact Us</li>
               <li>About Us</li>
             </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Give Us Feedback</h4>
+            <button class="feedback-button" href="#">Give Feedback</button>
           </div>
         </div>
         <div class="w-100 text-center credits">

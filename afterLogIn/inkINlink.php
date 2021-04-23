@@ -74,6 +74,23 @@ if(isset($_SESSION['username']))
 }         
 ?>
 -->
+                    
+                    
+                     <?php 
+
+                            echo'<br>';
+                            echo '' . $_SESSION['password'].'<br/>';        
+                            echo '' . $_SESSION['email'].'<br/>';        
+                            echo '' . $_SESSION['username'].'<br/>';   
+                            echo '' . $_SESSION['f_name'].'<br/>';   
+                            echo '' . $_SESSION['l_name'].'<br/>';   
+
+     
+                            ?>  
+                    
+                    
+                    
+                    
 
                     </form>
                 </div>
@@ -368,32 +385,37 @@ if(isset($_SESSION['username']))
         </section>
 
         <!-- Footer Section -->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a class="footer-logo" href="">INK in Link</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius animi commodi quaerat. Quidem dolore odit consequatur unde asperiores libero laudantium? Similique eveniet reiciendis necessitatibus saepe numquam quasi expedita eius dolore?
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <h4>Usefull Links</h4>
-                        <ul>
-                            <li>Home</li>
-                            <li>Terms of services</li>
-                            <li>Privacy Policy</li>
-                            <li>Contact Us</li>
-                            <li>About Us</li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="w-100 text-center credits">
-                    <p>Made by Team EDITH &copy; 2021</p>
-                </div>
-            </div>
-        </footer>
+        
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <a class="footer-logo" href="">INK in Link</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius animi commodi quaerat. Quidem dolore odit consequatur unde asperiores libero laudantium? Similique eveniet reiciendis necessitatibus saepe numquam quasi expedita eius dolore?
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h4>Usefull Links</h4>
+            <ul>
+              <li>Home</li>
+              <li>Terms of services</li>
+              <li>Privacy Policy</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us</li>
+              <li>About Us</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Give Us Feedback</h4>
+            <button class="feedback-button" href="#">Give Feedback</button>
+          </div>
+        </div>
+        <div class="w-100 text-center credits">
+          <p>Made by Team EDITH &copy; 2021</p>
+        </div>
+      </div>
+    </footer>
 
 
         <!-- bootstrap js, jquery, popper -->
