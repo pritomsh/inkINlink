@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
         $_SESSION['password'] = $password;
 		header("Location: user_list.php");
 	}else {
-		echo "error";
+		echo "Wrong User name or Password";
 	}
 }
 ?>

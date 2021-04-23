@@ -163,7 +163,7 @@ $result = $conn->query($sql);
                                     <img class="img-fluid" src="images/covid-19.jpg" alt="" />
                                 </div>
                                 <div class="col-sm-8">
-                                    <a href="/blogs.html" class="blog-title">Covid-19</a>
+                                    <a href="blogs.html" class="blog-title">Covid-19</a>
                                     <p class="m-0">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Aliquam risus nibh, lacinia in magna eu, bibendum convallis
@@ -183,7 +183,7 @@ $result = $conn->query($sql);
                                     <img class="img-fluid" src="images/covid-19.jpg" alt="" />
                                 </div>
                                 <div class="col-sm-8">
-                                    <a href="/blogs.html" class="blog-title">Covid-19</a>
+                                    <a href="blogs.html" class="blog-title">Covid-19</a>
                                     <p class="m-0">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Aliquam risus nibh, lacinia in magna eu, bibendum convallis
@@ -203,7 +203,7 @@ $result = $conn->query($sql);
                                     <img class="img-fluid" src="images/covid-19.jpg" alt="" />
                                 </div>
                                 <div class="col-sm-8">
-                                    <a href="/blogs.html" class="blog-title">Covid-19</a>
+                                    <a href="blogs.html" class="blog-title">Covid-19</a>
                                     <p class="m-0">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Aliquam risus nibh, lacinia in magna eu, bibendum convallis
@@ -223,7 +223,7 @@ $result = $conn->query($sql);
                                     <img class="img-fluid" src="images/covid-19.jpg" alt="" />
                                 </div>
                                 <div class="col-sm-8">
-                                    <a href="/blogs.html" class="blog-title">Covid-19</a>
+                                    <a href="blogs.html" class="blog-title">Covid-19</a>
                                     <p class="m-0">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Aliquam risus nibh, lacinia in magna eu, bibendum convallis
@@ -243,7 +243,7 @@ $result = $conn->query($sql);
                                     <img class="img-fluid" src="images/covid-19.jpg" alt="" />
                                 </div>
                                 <div class="col-sm-8">
-                                    <a href="/blogs.html" class="blog-title">Covid-19</a>
+                                    <a href="blogs.html" class="blog-title">Covid-19</a>
                                     <p class="m-0">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Aliquam risus nibh, lacinia in magna eu, bibendum convallis

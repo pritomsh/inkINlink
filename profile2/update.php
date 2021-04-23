@@ -9,7 +9,6 @@ $l_name = $_SESSION['l_name'];
 $email = $_SESSION['email'];
 $username = $_SESSION['username'];
 $gender = $_SESSION['gender'];
-$id = $_SESSION['id'];
 
 
 $sql = "UPDATE registration SET f_name='$f_name',l_name='$l_name',email ='$email',username = '$username', gender = '$gender' WHERE email=$email";
