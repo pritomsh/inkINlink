@@ -451,7 +451,7 @@
           </div>
           <div class="col-md-3">
             <h4>Give Us Feedback</h4>
-            <button class="feedback-button" href="#">Give Feedback</button>
+            <a class="feedback-button" href="feedback/index.html">Give Feedback</a>
           </div>
         </div>
         <div class="w-100 text-center credits">

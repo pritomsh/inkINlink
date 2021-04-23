@@ -62,8 +62,18 @@ $result = $conn->query($sql);
 
                         <!-- this is the user name -->
 
+<!--
 
+ <?php 
 
+                            echo'<br>';
+       
+                            echo '' . $_SESSION['id'].'<br/>';   
+                            
+
+     
+                            ?>  
+-->
 
                         <a href="logout.php" class="btn btn-info" role="button" style="float:right;">Log Out</a>
                         <!--
@@ -74,23 +84,6 @@ if(isset($_SESSION['username']))
 }         
 ?>
 -->
-                    
-                    
-                     <?php 
-
-                            echo'<br>';
-                            echo '' . $_SESSION['password'].'<br/>';        
-                            echo '' . $_SESSION['email'].'<br/>';        
-                            echo '' . $_SESSION['username'].'<br/>';   
-                            echo '' . $_SESSION['f_name'].'<br/>';   
-                            echo '' . $_SESSION['l_name'].'<br/>';   
-
-     
-                            ?>  
-                    
-                    
-                    
-                    
 
                     </form>
                 </div>
@@ -408,7 +401,7 @@ if(isset($_SESSION['username']))
           </div>
           <div class="col-md-3">
             <h4>Give Us Feedback</h4>
-            <button class="feedback-button" href="#">Give Feedback</button>
+            <a class="feedback-button" href="/inkINlink/feedback/index.html">Give Feedback</a>
           </div>
         </div>
         <div class="w-100 text-center credits">

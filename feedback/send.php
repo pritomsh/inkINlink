@@ -1,24 +1,22 @@
 <?php
-	$name = $_POST['name'];
-	$visitor_email = $_POST['email'];
-	$message = $_POST['message'];
+include ("connection.php");
 
-	$email_from = 'WebDesign@gmail.com';
 
-	$email_subject = 'New Form Submission';
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
 
-	$email_body = 'User name: $name.\n'.
-				  'User email: $visitor_email.\n'.
-				  'User message: $message.\n';
+$sql = "insert into feedback values('','$name', '$email', '$message')";
 
-	$to = 'example@gmail.com';
+$data = mysqli_query($conn,$sql);
 
-	$headers = 'From: $email_from \r\n';
-
-	$headers .= 'Reply-to: $visitor_email \r\n';
-
-	mail($to,$email_subject,$email_body,$headers);
-
-	header('Location: index.html');
+if ($data) {
+    
+header("location: /inkINlink/inkINlink.php");	
+	
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+$conn->close();
 
 ?>

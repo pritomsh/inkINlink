@@ -42,7 +42,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM registration ");
                             <a class="nav-link active" aria-current="page" href="/inkINlink/afterLogIn/inkINlink.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/inkINlink/profile.html">Profile</a>
+                            <a class="nav-link" href="index.php">Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Trends</a>
@@ -89,7 +89,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM registration ");
                             ?>  
                     
 
-                            <li><a href="update.php"><i class="far fa-edit fa-1.5x mb-3">Update</i></a></li>
+                            <li><a href="edit.php"><i class="far fa-edit fa-1.5x mb-3">Update</i></a></li>
                         </div>
                     </div>
                     <div class="col-sm-8 bg-white rounded-right">
@@ -99,25 +99,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM registration ");
 
 
                         <div class="container" style="margin-top:20px;">
-
-
-                           
-                            
-                                <?php 
-
-                            echo'<br>';
-                            echo '' . $_SESSION['password'].'<br/>';        
-                            echo '' . $_SESSION['email'].'<br/>';        
-                            echo '' . $_SESSION['username'].'<br/>';   
-                            echo '' . $_SESSION['f_name'].'<br/>';   
-                            echo '' . $_SESSION['l_name'].'<br/>';   
-
-     
-                            ?>  
-                             
-                             
-                             
-                             
+                        <form action="">
+                   
                               <table class="table">
                                 <thead>
                                     <tr>
@@ -138,22 +121,16 @@ $result = mysqli_query($mysqli, "SELECT * FROM registration ");
 
                                         echo "<tr>";
                                         echo "<td>".$_SESSION['f_name']."</td>";
-                                        echo "<td>".$_SESSION['f_name']."</td>";
-                                        echo "<td>".$_SESSION['f_name']."</td>";
-                                        echo "<td>".$_SESSION['f_name']."</td>";
-                                        echo "<td>".$_SESSION['f_name']."</td>";
-
-//                                        echo "<td><a href="edit.php">Edit</a> | <a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
+                                        echo "<td>".$_SESSION['l_name']."</td>";
+                                        echo "<td>".$_SESSION['email']."</td>";
+                                        echo "<td>".$_SESSION['username']."</td>";
+                                        echo "<td>".$_SESSION['gender']."</td>";
                                     
                                     ?>
-                                    
-                                    
-                                    <a href="edit1.php">edit</a>
                                 </tbody>
                             </table>
                             
-                            
-                            
+                            </form>
                             
                              
                               

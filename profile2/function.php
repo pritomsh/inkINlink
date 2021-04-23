@@ -10,7 +10,7 @@ function check_login_user(){
 // Check, if username session is NOT set then this page will jump to login page
     if (!isset($_SESSION['email'])) {
         if (!isset($_SESSION['password'])) {
-            header('Location: index.php');
+            header('Location: /inkINlink/LogInUser/logInForm.php');
             exit;
         }
     }

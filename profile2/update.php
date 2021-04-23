@@ -1,27 +1,27 @@
 <?php
 include ("config.php");
+include_once("function.php");
+check_login_user();
+$result = mysqli_query($mysqli, "SELECT * FROM registration ");
+
+$f_name = $_SESSION['f_name'];
+$l_name = $_SESSION['l_name'];
+$email = $_SESSION['email'];
+$username = $_SESSION['username'];
+$gender = $_SESSION['gender'];
+$id = $_SESSION['id'];
 
 
-$f_name = $_POST['f_name'];
-$l_name = $_POST['l_name'];
-$email = $_POST['email'];
-$user_name = $_POST['user_name'];
-$password = $_POST['password'];
-$re_password = $_POST['re_password'];
-$gender = $_POST['gender'];
+$sql = "UPDATE registration SET f_name='$f_name',l_name='$l_name',email ='$email',username = '$username', gender = '$gender' WHERE id=$id";
 
-
-$sql = "UPDATE registration SET f_name='$f_name',l_name='$l_name',email ='$email',username = '$username', password = '$password";
-
-$data = mysqli_query($conn,$sql);
+$data = mysqli_query($mysqli,$sql);
 
 if ($data) {
     
-header("location: /inkINlink/inkINlink.php");	
+header("location: index.php");	
 	
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+  echo "Error: " . $sql . "<br>" . $mysqli->error;
 }
-$conn->close();
-
+$mysqli->close();
 ?>

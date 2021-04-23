@@ -183,6 +183,10 @@ img.rounded-circle {
 /* this is the feedback design */
 
 
+.col-md-3 h4{
+    margin-bottom: 25px;
+}
+
 .feedback-button {
     background-color: #66fcf1;
     border: 2px solid white;
