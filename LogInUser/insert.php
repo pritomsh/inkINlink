@@ -17,6 +17,8 @@ $conn = mysqli_connect('localhost', 'root', '' , 'inkinlink') or die ('Unable to
         $_SESSION["email"] = $row['email'];
        $_SESSION["password"] = $row['password'];
         $_SESSION["username"] = $row['username'];
+        $_SESSION["username"] = $row['f_name'];
+        $_SESSION["username"] = $row['username'];
     }   else {
         echo '<script type = "text/javascript">';
         echo 'alert("Invalid Username or Password!");';

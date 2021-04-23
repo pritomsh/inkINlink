@@ -119,11 +119,11 @@
             </div>
         </div>
         <div class="navbar">
-<!--
+
             <a href="#home" class="active">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
--->
+
 
 
         </div>
