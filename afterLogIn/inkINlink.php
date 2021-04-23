@@ -76,14 +76,8 @@ $result = $conn->query($sql);
 -->
 
                         <a href="logout.php" class="btn btn-info" role="button" style="float:right;">Log Out</a>
-                        <!--
-<?php 
-if(isset($_SESSION['username']))
-{
-    echo '' . $_SESSION['username'].'<br/>';
-}         
-?>
--->
+                      
+
 
                     </form>
                 </div>

@@ -19,7 +19,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM registration ");
    
    
    <form class="box" action="update.php" method="post">
-                <h2>Registration</h2>
+                <h2>Update Profile</h2>
                 <div class="input-name">
                     <i class="fa fa-user lock"></i>
                     <p>First name</p>

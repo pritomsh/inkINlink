@@ -12,7 +12,7 @@ $gender = $_SESSION['gender'];
 $id = $_SESSION['id'];
 
 
-$sql = "UPDATE registration SET f_name='$f_name',l_name='$l_name',email ='$email',username = '$username', gender = '$gender' WHERE id=$id";
+$sql = "UPDATE registration SET f_name='$f_name',l_name='$l_name',email ='$email',username = '$username', gender = '$gender' WHERE email=$email";
 
 $data = mysqli_query($mysqli,$sql);
 
