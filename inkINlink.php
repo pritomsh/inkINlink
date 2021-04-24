@@ -181,12 +181,9 @@
                   <img class="img-fluid" src="images/covid-19.jpg" alt="" />
                 </div>
                 <div class="col-sm-8">
-                  <a href="/blogs.html" class="blog-title">Covid-19</a>
+                  <a href="/blogs.html" class="blog-title">Asus Zenfone 8 will become official on May 12</a>
                   <p class="m-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam risus nibh, lacinia in magna eu, bibendum convallis
-                    nunc. Fusce ornare ultricies urna. In hac habitasse platea
-                    dictumst. Ut purus tellus.
+                    Asus has announced when it's going to make the Zenfone 8 family of smartphones official. The unveiling event will take place on May 12 at 1 PM Eastern / 7 PM CET. We are thus less than 19 days away from that point, as the counter on the special event website helpfully informs us, with a handy countdown that perhaps unnecessarily includes seconds.
                   </p>
                   <div class="badge">
                     <a href="#">Medical</a>
