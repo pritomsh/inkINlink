@@ -178,7 +178,7 @@
             <article class="blog-post mb-3 shadow">
               <div class="row">
                 <div class="col-sm-4">
-                  <img class="img-fluid" src="images/covid-19.jpg" alt="" />
+                  <img class="img-fluid" src="images/2.jpg" alt="" />
                 </div>
                 <div class="col-sm-8">
                   <a href="/blogs.html" class="blog-title">Asus Zenfone 8 will become official on May 12</a>
@@ -195,7 +195,7 @@
             <article class="blog-post mb-3 shadow">
                 <div class="row">
                   <div class="col-sm-4">
-                    <img class="img-fluid" src="images/covid-19.jpg" alt="" />
+                    <img class="img-fluid" src="images/3.jpeg" alt="" />
                   </div>
                   <div class="col-sm-8">
                     <a href="/blogs.html" class="blog-title">Covid-19</a>
