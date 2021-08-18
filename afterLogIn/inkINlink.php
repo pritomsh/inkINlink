@@ -40,52 +40,23 @@ $result = $conn->query($sql);
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/inkINlink/profile2/index.php">Profile</a>
-
-                           
-
-
                         </li>
-
-
-
-
                         <li class="nav-item">
                             <a class="nav-link" href="#">Trends</a>
                         </li>
-
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control border-0 rounded-0" type="search" placeholder="Search" aria-label="Search" />
                         <button class="btn-main btn btn-success ml-3 my-sm-0 rounded-0" type="submit">
                             Search
                         </button>
-
-                        <!-- this is the user name -->
-
-<!--
-
- <?php 
-
-                            echo'<br>';
-       
-                            echo '' . $_SESSION['id'].'<br/>';   
-                            
-
-     
-                            ?>  
--->
-
                         <a href="logout.php" class="btn btn-info" role="button" style="float:right;">Log Out</a>
-                      
-
-
                     </form>
                 </div>
             </div>
         </nav>
 
         <!-- HERO Section -->
-
         <section class="hero py-4">
             <div class="container">
                 <div class="row">
@@ -150,9 +121,7 @@ $result = $conn->query($sql);
                 </div>
             </div>
         </section>
-
         <!-- Blog Section -->
-
         <section class="blog-posts py-4">
             <div class="container contents-blogs">
                 <div class="row">
@@ -358,7 +327,6 @@ $result = $conn->query($sql);
                         <div class="badges w-100">
                             <a href="#">Technology</a>
                             <a href="#">Global</a>
-                            <a href="#">Medical</a>
                             <a href="#">Daily life</a>
                             <a href="#">National</a>
                             <a href="#">Weather</a>
@@ -372,7 +340,6 @@ $result = $conn->query($sql);
         </section>
 
         <!-- Footer Section -->
-        
     <footer class="footer py-4">
       <div class="container">
         <div class="row">
@@ -403,8 +370,6 @@ $result = $conn->query($sql);
         </div>
       </div>
     </footer>
-
-
         <!-- bootstrap js, jquery, popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
         </script>
